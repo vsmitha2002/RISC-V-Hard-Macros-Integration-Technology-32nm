@@ -1,0 +1,12 @@
+
+
+create_workspace -technology /home1/BPD23/VSchandrika/VLSI_PD/Project/MACROS/ref/tech/saed32nm_1p9m.tf -flow normal msrv32_alu_ndm
+read_gds /home1/BPD23/VSchandrika/VLSI_PD/Project/MACROS/result/msrv32_alu.gds
+check_workspace
+commit_workspace -output msrv32_alu.ndm 
+open_lib /home1/BPD23/VSchandrika/VLSI_PD/Project/MACROS/WORK_DIR/msrv32_alu.ndm
+open_block msrv32_alu.frame
+close_lib
+create_workspace -flow edit /home1/BPD23/VSchandrika/VLSI_PD/Project/MACROS/WORK_DIR/msrv32_alu.ndm
+set_attribute [get_lib_cells msrv32_alu] design_type macro
+
