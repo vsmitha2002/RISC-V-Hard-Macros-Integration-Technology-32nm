@@ -1,109 +1,103 @@
-Design and Implementation of RISC-V IP with Hard Macro Creation and Integration
 
-Objective
+🚀 RISC-V IP with Hard Macro Creation and Integration
+📌 Objective
+Design and implementation of RISC-V IP with hard macro creation and integration, focusing on area, power, and performance constraints.
 
-Design and Implemented RISC-V IP with Hard Macro Creation and Integration.
+🔥 Key Focus Areas
+✅ Designed and implemented two hard macros for RISC-V sub-modules, meeting area, power, and performance constraints.
 
-Key Focus Areas
+✅ Integrated the hard macros into the top-level design with optimized floor planning, placement, and routing.
 
-Designed and implemented two hard macros for RISC-V sub-modules, meeting area, power, and performance constraints.
+✅ Optimized the design to achieve timing closure and meet power constraints using Static Timing Analysis (STA).
 
-Integrated the hard macros into the top-level design with optimized floor planning, placement, and routing.
+🛠️ Inputs to Physical Design
+Netlist (.v): Verilog files representing the logical connectivity of the design.
 
-Optimized design to meet timing closure and power constraints using static timing analysis.
+Liberty File (.lib): Specifies the timing, power, and functional characteristics of standard cells.
 
+Design Constraints (.sdc): Defines timing, area, and power constraints.
 
-Inputs to Physical Design
+Technology File (.tf): Includes manufacturing process details such as metal layers and design rules.
 
-Netlist (.v): A logical representation of the design, typically in formats like Verilog or VHDL, that specifies the circuit's connectivity.
+LEF File (.lef): Abstract physical views and design rules of standard cells and macros.
 
-Liberty File (.lib): Contains information about the timing, power, and functional characteristics of standard cells used in the design.
+DEF File (.def): Contains the layout description, including floorplan, cell placement, and routing.
 
-Design Constraints File (.sdc): Specifies timing, area, and power constraints for the design.
+Power Intent File (.upf): Defines power domains and low-power strategies.
 
-Technology File (.tf): Includes details about the manufacturing process, such as metal layer stack-up, design rules, and parasitic models.
+TLUPlus File (.tluplus): Used for parasitic extraction and delay calculation.
 
-Library Exchange Format (.lef): Describes the physical design rules & abstract views of the standard cells, macros.
+🔨 Creating Macros
+Converted ALU and Machine Counter blocks into hard macros using:
 
-Design Exchange Format (.def): Describes the design layout, including floorplan, cell placement, and routing information.
+Design Compiler for synthesis.
 
-Power Intent File (.upf): Specifies the power domains and power management strategies for low-power designs.
+ICC2 for physical design.
 
-Table Lookup Plus File (.tluplus): These files are crucial in the backend flow of VLSI physical design, specifically for parasitic extraction and delay calculation. They provide interconnect resistance and 
+LM Shell (Library Manager) for GDS II to NDM conversion.
 
-capacitance values.
+⚙️ Synthesis and Physical Design Flow
+Synthesis:
 
+Converted RTL to gate-level netlist using Synopsys Design Compiler.
 
-Creating Macros
+Physical Design:
 
-Here we have 30 Verilog files. Among those files, two blocks, ALU and Machine Counter, were converted into hard macros using the following tools:
+Transformed the gate-level netlist into a physical layout (GDS II) using Synopsys ICC2.
 
-Design Compiler
+Hard Macro Creation:
 
-ICC2
+Imported GDS II files into Library Manager (LM) and converted them into NDM format.
 
-LM Shell (Library Manager)
-
-Synthesis and Physical Design
-
-Synthesis: The process of converting the functional behavioral RTL into a gate-level netlist. Synthesis is done using Synopsys Design Compiler.
-
-Physical Design: The process of transforming a gate-level netlist into a physical layout on a chip (GDS II). The conversion from GLN to GDS II is performed using Synopsys ICC2.
-
-Hard Macro Creation: Hard macros are created by reading the GDS II files into the Library Manager and converting the GDS file into an NDM file.
-
-
-Design Specifications
-
-Role: Synthesis, P & R, and Timing Analysis
+📏 Design Specifications
+Role: Synthesis, P&R, and Timing Analysis
 
 Technology Node: 32nm
 
 Layers: 8 Metal layers
 
-Hard Macros: 2
+Hard Macros: 2 (ALU and Machine Counter)
 
 Instance Count: ~25k
 
 Number of Clocks: 1
 
-
-Tools Utilized
-
+🔧 Tools Utilized
 Synthesis: Design Compiler (Synopsys)
 
-P & R Tools: IC Compiler II (Synopsys)
+Place & Route: IC Compiler II (Synopsys)
 
-Static Timing Analysis: Primetime (Synopsys)
+Timing Analysis: PrimeTime (Synopsys)
 
 Physical Verification: Calibre (Siemens)
 
+🚀 Responsibilities
+🛠️ Creating a design library and importing NDM, Technology files, Parasitic Models, and RTL.
 
-Responsibilities
+⏱️ Writing MCMM timing constraints and loading them into the tool.
 
-Creating a design library and importing NDM, Technology files, Parasitic Models, and RTL.
+🔧 Performing synthesis and exporting Netlist, SDC, and DEF files.
 
-Writing MCMM Timing Constraints and reading them into the tool.
+📐 Floorplanning, shaping blocks, and placing Pins, I/Os, and Macros.
 
-Synthesizing and optimizing the design and writing Netlist, SDC, and DEF files.
+⚡ Creating a Power Plan with rings, straps, rails, and power mesh.
 
-Creating the floorplan, shaping the blocks, and placing Pins, I/Os, and Macros.
+🔍 CCD Optimization and inserting ICGs.
 
-Creating a Power Plan – Power Rings, Straps, Rails, and Powermesh
+🕒 Performing Clock Tree Synthesis (CTS).
 
-Performing CCD Optimization and inserting ICGs.
+🔗 Global and detailed routing, followed by DRC checks.
 
-Performing Clock Tree Synthesis.
+✅ Running signoff checks and exporting Netlist, GDS II, SDC, SPEF, and DEF files.
 
-Performing Global & Detailed Routing and checking DRCs.
+📊 Timing Analysis using PrimeTime, including:
 
-Performing Signoff checks.
+Generating timing reports.
 
-Exporting Netlist, GDS II, SDC, SPEF, and DEF files.
+Fixing violations by resizing cells, inserting/deleting buffers, cell swapping, and net improvements.
 
-Timing analysis of the design using the PrimeTime tool:
-
-Obtaining timing reports.
-
-Fixing timing violations by sizing the cells, inserting/deleting buffers, cell swapping, and improving the nets.
+📬 Contact
+👤 Velagacharla Sai Chandrika Smitha Venkat
+📧 Email: your-email@example.com
+🔗 GitHub Profile
 
