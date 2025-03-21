@@ -43,8 +43,9 @@ LM Shell (Library Manager) for GDS II to NDM conversion.
 ⚙️ Synthesis and Physical Design Flow
 Synthesis:
 
-Converted RTL to gate-level netlist using Synopsys Design Compiler.
-
+Synthesis transforms the simple RTL design into a gate-level netlist with all the constraints as 
+specified by the designer. In simple language, Synthesis is a process that converts the abstract 
+form of design to a properly implemented chip in terms of logic gates. Using Synopsys DC compiler
 Physical Design:
 
 Transformed the gate-level netlist into a physical layout (GDS II) using Synopsys ICC2.
