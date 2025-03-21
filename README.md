@@ -27,7 +27,7 @@ Timing Constraints Report
 1. Translation: Converting RTL code into an intermediate representation.
  2. Optimization: Improving the design for area, power, and timing – striking the perfect balance between performance and efficiency. 
 3. Mapping: Associating the optimized design with actual logic gates from the technology library.
-Why is Synthesis Important? 
+    Why is Synthesis Important? 
 • Bridges the Gap: It translates abstract RTL into real hardware components. 
 • Ensures Efficiency: Through optimization, synthesis ensures designs meet power, performance, and area (PPA) targets. 
 • Facilitates Validation: Post-synthesis verification ensures functional and timing correctness.
