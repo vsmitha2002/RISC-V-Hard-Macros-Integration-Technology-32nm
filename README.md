@@ -63,7 +63,7 @@ Imported GDS II files into Library Manager (LM) and converted them into NDM form
 
 📏 Design Specifications:
 
-Role: Synthesis, P&R, and Timing Analysis
+Tools: Synthesis, P&R, and Timing Analysis
 
 Technology Node: 32nm
 
