@@ -13,6 +13,7 @@ Design and implementation of RISC-V IP with hard macro creation and integration,
 ✅ Optimized the design to achieve timing closure and meet power constraints using Static Timing Analysis (STA).
 
 🛠️ Inputs to Physical Design
+
 Netlist (.v): Verilog files representing the logical connectivity of the design.
 
 Liberty File (.lib): Specifies the timing, power, and functional characteristics of standard cells.
@@ -30,6 +31,7 @@ Power Intent File (.upf): Defines power domains and low-power strategies.
 TLUPlus File (.tluplus): Used for parasitic extraction and delay calculation.
 
 🔨 Creating Macros
+
 Converted ALU and Machine Counter blocks into hard macros using:
 
 Design Compiler for synthesis.
@@ -51,7 +53,8 @@ Hard Macro Creation:
 
 Imported GDS II files into Library Manager (LM) and converted them into NDM format.
 
-📏 Design Specifications
+📏 Design Specifications:
+
 Role: Synthesis, P&R, and Timing Analysis
 
 Technology Node: 32nm
@@ -65,6 +68,7 @@ Instance Count: ~25k
 Number of Clocks: 1
 
 🔧 Tools Utilized
+
 Synthesis: Design Compiler (Synopsys)
 
 Place & Route: IC Compiler II (Synopsys)
@@ -74,6 +78,7 @@ Timing Analysis: PrimeTime (Synopsys)
 Physical Verification: Calibre (Siemens)
 
 🚀 Responsibilities
+
 🛠️ Creating a design library and importing NDM, Technology files, Parasitic Models, and RTL.
 
 ⏱️ Writing MCMM timing constraints and loading them into the tool.
@@ -98,8 +103,5 @@ Generating timing reports.
 
 Fixing violations by resizing cells, inserting/deleting buffers, cell swapping, and net improvements.
 
-📬 Contact
-👤 Velagacharla Sai Chandrika Smitha Venkat
-📧 Email: your-email@example.com
-🔗 GitHub Profile
+
 
