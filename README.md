@@ -1,9 +1,11 @@
 
 🚀 RISC-V IP with Hard Macro Creation and Integration
+
 📌 Objective
 Design and implementation of RISC-V IP with hard macro creation and integration, focusing on area, power, and performance constraints.
 
 🔥 Key Focus Areas
+
 ✅ Designed and implemented two hard macros for RISC-V sub-modules, meeting area, power, and performance constraints.
 
 ✅ Integrated the hard macros into the top-level design with optimized floor planning, placement, and routing.
