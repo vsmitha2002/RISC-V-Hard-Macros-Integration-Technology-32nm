@@ -41,12 +41,19 @@ ICC2 for physical design.
 LM Shell (Library Manager) for GDS II to NDM conversion.
 
 ⚙️ Synthesis and Physical Design Flow
-Synthesis:
 
+Synthesis:
 Synthesis transforms the simple RTL design into a gate-level netlist with all the constraints as 
 specified by the designer. In simple language, Synthesis is a process that converts the abstract 
 form of design to a properly implemented chip in terms of logic gates. Using Synopsys DC compiler
+
 Physical Design:
+ Physical design means --->> netlist (.v ) converted into GDSII form(layout form) 
+logical connectivity of cells converted into physical connectivity. 
+During physical design, all design components are instantiated with their geometric 
+representations. In other words, all macros, cells, gates, transistors, etc., with fixed shapes and 
+sizes per fabrication layer, are assigned spatial locations (placement) and have appropriate 
+routing connections (routing) completed in metal layers. 
 
 Transformed the gate-level netlist into a physical layout (GDS II) using Synopsys ICC2.
 
